@@ -30,7 +30,6 @@
    NSString *password = [_passwordTextField.text
                          stringByTrimmingCharactersInSet:[NSCharacterSet
                                                           whitespaceAndNewlineCharacterSet]];
-
    if (!email.length || !password.length)
    {
       NSString *message = @"Make sure you enter a username and password.";

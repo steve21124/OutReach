@@ -45,7 +45,6 @@
    }
    else
    {
-
       PFUser *newUser = [PFUser user];
       newUser.username = email;
       newUser.email = email;
