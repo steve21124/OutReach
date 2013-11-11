@@ -7,6 +7,7 @@
 //
 
 #import "ORViewController.h"
+#import <Parse/Parse.h>
 
 @interface ORViewController ()
 
