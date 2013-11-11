@@ -9,40 +9,29 @@
 #import "ORHomeViewController.h"
 #import <Parse/Parse.h>
 
-@interface ORHomeViewController ()
-
-@end
-
 @implementation ORHomeViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
    PFUser *currentUser = [PFUser currentUser];
    if (!currentUser)
-      [self performSegueWithIdentifier:@"showLogin" sender:nil];
+      [self performSegueWithIdentifier:@"showLogin" sender:self];
+
+   _usernameLabel.text = currentUser.username;
 
    [super viewWillAppear:animated];
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)logout:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   [PFUser logOut];
+   [self performSegueWithIdentifier:@"showLogin"
+                             sender:self];
 }
 
 @end
