@@ -26,7 +26,30 @@
    [super viewWillAppear:animated];
 }
 
-- (IBAction)loginButtonPressed:(id)sender
+- (IBAction)signUp:(id)sender
+{
+   NSString *firstName =
+      [_firstName.text stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet];
+   NSString *lastName =
+      [_lastName.text stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet];
+   NSString *password =
+      [_password.text stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet];
+   NSString *email =
+      [_emailAddress.text stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet];
+
+   if (!firstName.length || !lastName.length || !password.length || !email.length)
+   {
+      NSString *message = @"Make sure you enter a username, password, and email address.";
+      UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"OutReach Alert:"
+                                                          message:message
+                                                         delegate:nil
+                                                cancelButtonTitle:@"OK"
+                                                otherButtonTitles:nil];
+      [alertView show];
+   }
+}
+
+- (IBAction)returnToLogin:(id)sender
 {
    [self.navigationController popViewControllerAnimated:YES];
 }

@@ -9,7 +9,12 @@
 #import "ORBaseViewController.h"
 
 @interface ORSignUpViewController : ORBaseViewController
+@property (weak, nonatomic) IBOutlet UITextField *firstName;
+@property (weak, nonatomic) IBOutlet UITextField *lastName;
+@property (weak, nonatomic) IBOutlet UITextField *emailAddress;
+@property (weak, nonatomic) IBOutlet UITextField *password;
 
-- (IBAction)loginButtonPressed:(id)sender;
+- (IBAction)signUp:(id)sender;
+- (IBAction)returnToLogin:(id)sender;
 
 @end
