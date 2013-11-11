@@ -14,15 +14,6 @@
 
 @implementation ORSignUpViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -35,10 +26,9 @@
    [super viewWillAppear:animated];
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)loginButtonPressed:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

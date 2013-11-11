@@ -10,4 +10,6 @@
 
 @interface ORSignUpViewController : ORBaseViewController
 
+- (IBAction)loginButtonPressed:(id)sender;
+
 @end
