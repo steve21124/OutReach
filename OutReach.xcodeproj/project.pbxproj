@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E76CB5F1830873A001072A3 /* ORBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E76CB5E1830873A001072A3 /* ORBaseViewController.m */; };
+		8E76CB6218308883001072A3 /* ORLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E76CB6118308883001072A3 /* ORLoginViewController.m */; };
+		8E76CB6518308B3E001072A3 /* ORSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E76CB6418308B3E001072A3 /* ORSignUpViewController.m */; };
 		8E99B31218305B9F00C7AEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E99B31118305B9F00C7AEDB /* Foundation.framework */; };
 		8E99B31418305B9F00C7AEDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E99B31318305B9F00C7AEDB /* CoreGraphics.framework */; };
 		8E99B31618305B9F00C7AEDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E99B31518305B9F00C7AEDB /* UIKit.framework */; };
@@ -30,6 +33,7 @@
 		8E99B35718305DC000C7AEDB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E99B34E18305DC000C7AEDB /* Security.framework */; };
 		8E99B35818305DC000C7AEDB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E99B34F18305DC000C7AEDB /* StoreKit.framework */; };
 		8E99B35918305DC000C7AEDB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E99B35018305DC000C7AEDB /* SystemConfiguration.framework */; };
+		8E99B35F183086C800C7AEDB /* ORHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E99B35E183086C800C7AEDB /* ORHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E76CB5D1830873A001072A3 /* ORBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBaseViewController.h; sourceTree = "<group>"; };
+		8E76CB5E1830873A001072A3 /* ORBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBaseViewController.m; sourceTree = "<group>"; };
+		8E76CB6018308883001072A3 /* ORLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLoginViewController.h; sourceTree = "<group>"; };
+		8E76CB6118308883001072A3 /* ORLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLoginViewController.m; sourceTree = "<group>"; };
+		8E76CB6318308B3E001072A3 /* ORSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSignUpViewController.h; sourceTree = "<group>"; };
+		8E76CB6418308B3E001072A3 /* ORSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSignUpViewController.m; sourceTree = "<group>"; };
 		8E99B30E18305B9F00C7AEDB /* OutReach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutReach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E99B31118305B9F00C7AEDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8E99B31318305B9F00C7AEDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,6 +80,8 @@
 		8E99B34E18305DC000C7AEDB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8E99B34F18305DC000C7AEDB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		8E99B35018305DC000C7AEDB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8E99B35D183086C800C7AEDB /* ORHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORHomeViewController.h; sourceTree = "<group>"; };
+		8E99B35E183086C800C7AEDB /* ORHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +161,18 @@
 		8E99B31718305B9F00C7AEDB /* OutReach */ = {
 			isa = PBXGroup;
 			children = (
+				8E99B32918305B9F00C7AEDB /* Images.xcassets */,
+				8E99B32318305B9F00C7AEDB /* Main.storyboard */,
+				8E76CB6318308B3E001072A3 /* ORSignUpViewController.h */,
+				8E76CB6418308B3E001072A3 /* ORSignUpViewController.m */,
+				8E76CB6018308883001072A3 /* ORLoginViewController.h */,
+				8E76CB6118308883001072A3 /* ORLoginViewController.m */,
 				8E99B32018305B9F00C7AEDB /* ORAppDelegate.h */,
 				8E99B32118305B9F00C7AEDB /* ORAppDelegate.m */,
-				8E99B32318305B9F00C7AEDB /* Main.storyboard */,
-				8E99B32918305B9F00C7AEDB /* Images.xcassets */,
+				8E76CB5D1830873A001072A3 /* ORBaseViewController.h */,
+				8E76CB5E1830873A001072A3 /* ORBaseViewController.m */,
+				8E99B35D183086C800C7AEDB /* ORHomeViewController.h */,
+				8E99B35E183086C800C7AEDB /* ORHomeViewController.m */,
 				8E99B31818305B9F00C7AEDB /* Supporting Files */,
 			);
 			path = OutReach;
@@ -285,8 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E76CB5F1830873A001072A3 /* ORBaseViewController.m in Sources */,
+				8E99B35F183086C800C7AEDB /* ORHomeViewController.m in Sources */,
+				8E76CB6218308883001072A3 /* ORLoginViewController.m in Sources */,
 				8E99B31E18305B9F00C7AEDB /* main.m in Sources */,
 				8E99B32218305B9F00C7AEDB /* ORAppDelegate.m in Sources */,
+				8E76CB6518308B3E001072A3 /* ORSignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +527,7 @@
 				8E99B34218305B9F00C7AEDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E99B34318305B9F00C7AEDB /* Build configuration list for PBXNativeTarget "OutReachTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +536,7 @@
 				8E99B34518305B9F00C7AEDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

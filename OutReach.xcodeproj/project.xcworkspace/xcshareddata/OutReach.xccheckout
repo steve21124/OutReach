@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>18E2C998-F9F7-4F9F-87C6-3C291D728E34</string>
+	<string>404A63D5-FEFA-483D-A7A8-29C194A019C7</string>
 	<key>IDESourceControlProjectName</key>
 	<string>OutReach</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5CA9027C-9EBD-4AD7-B57C-86EDE91BB416</key>
-		<string>https://github.com/gregoryklein/OutReach</string>
+		<key>820BE1B5-1B29-4DCA-B91C-D20C6A027138</key>
+		<string>https://github.com/gregoryklein/OutReach.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>OutReach.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5CA9027C-9EBD-4AD7-B57C-86EDE91BB416</key>
+		<key>820BE1B5-1B29-4DCA-B91C-D20C6A027138</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/gregoryklein/OutReach</string>
+	<string>https://github.com/gregoryklein/OutReach.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5CA9027C-9EBD-4AD7-B57C-86EDE91BB416</string>
+	<string>820BE1B5-1B29-4DCA-B91C-D20C6A027138</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5CA9027C-9EBD-4AD7-B57C-86EDE91BB416</string>
+			<string>820BE1B5-1B29-4DCA-B91C-D20C6A027138</string>
 			<key>IDESourceControlWCCName</key>
 			<string>OutReach</string>
 		</dict>
