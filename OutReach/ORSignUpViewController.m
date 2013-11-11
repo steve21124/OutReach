@@ -8,16 +8,11 @@
 
 #import "ORSignUpViewController.h"
 
-@interface ORSignUpViewController ()
-
-@end
-
 @implementation ORSignUpViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -46,6 +41,10 @@
                                                 cancelButtonTitle:@"OK"
                                                 otherButtonTitles:nil];
       [alertView show];
+   }
+   else
+   {
+      
    }
 }
 
