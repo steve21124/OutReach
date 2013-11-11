@@ -8,16 +8,13 @@
 
 #import "ORBaseViewController.h"
 
-@interface ORBaseViewController ()
-
-@end
-
 @implementation ORBaseViewController
 
 - (void)viewDidLoad
 {
    [super viewDidLoad];
 
+   // Hides the status bar at the top of the screen
    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
       // iOS 7
       [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
@@ -30,12 +27,6 @@
 - (BOOL)prefersStatusBarHidden
 {
    return YES;
-}
-
-- (void)didReceiveMemoryWarning
-{
-   [super didReceiveMemoryWarning];
-   // Dispose of any resources that can be recreated.
 }
 
 @end
