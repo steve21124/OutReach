@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E75B026183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75B023183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.m */; };
+		8E75B027183AE34B000AEEB8 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75B025183AE34B000AEEB8 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		8E76CB5F1830873A001072A3 /* ORBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E76CB5E1830873A001072A3 /* ORBaseViewController.m */; };
 		8E76CB6218308883001072A3 /* ORLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E76CB6118308883001072A3 /* ORLoginViewController.m */; };
 		8E76CB6518308B3E001072A3 /* ORSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E76CB6418308B3E001072A3 /* ORSignUpViewController.m */; };
@@ -47,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E75B022183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = 3rdParty/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		8E75B023183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = 3rdParty/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		8E75B024183AE34B000AEEB8 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "3rdParty/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		8E75B025183AE34B000AEEB8 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "3rdParty/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		8E76CB5D1830873A001072A3 /* ORBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBaseViewController.h; sourceTree = "<group>"; };
 		8E76CB5E1830873A001072A3 /* ORBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBaseViewController.m; sourceTree = "<group>"; };
 		8E76CB6018308883001072A3 /* ORLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLoginViewController.h; sourceTree = "<group>"; };
@@ -118,9 +124,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E75B021183AE331000AEEB8 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				8E75B022183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.h */,
+				8E75B023183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.m */,
+				8E75B024183AE34B000AEEB8 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				8E75B025183AE34B000AEEB8 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = 3rdParty;
+			path = OutReach;
+			sourceTree = "<group>";
+		};
 		8E99B30518305B9F00C7AEDB = {
 			isa = PBXGroup;
 			children = (
+				8E75B021183AE331000AEEB8 /* 3rdParty */,
 				8E99B31718305B9F00C7AEDB /* OutReach */,
 				8E99B33618305B9F00C7AEDB /* OutReachTests */,
 				8E99B31018305B9F00C7AEDB /* Frameworks */,
@@ -305,10 +324,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E75B026183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				8E76CB5F1830873A001072A3 /* ORBaseViewController.m in Sources */,
 				8E99B35F183086C800C7AEDB /* ORHomeViewController.m in Sources */,
 				8E76CB6218308883001072A3 /* ORLoginViewController.m in Sources */,
 				8E99B31E18305B9F00C7AEDB /* main.m in Sources */,
+				8E75B027183AE34B000AEEB8 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				8E99B32218305B9F00C7AEDB /* ORAppDelegate.m in Sources */,
 				8E76CB6518308B3E001072A3 /* ORSignUpViewController.m in Sources */,
 			);
