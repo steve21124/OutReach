@@ -32,7 +32,7 @@
                                                           whitespaceAndNewlineCharacterSet]];
    if (!email.length || !password.length)
    {
-      NSString *message = @"Make sure you enter a username and password.";
+      NSString *message = @"Make sure you enter an email address and password.";
       UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"OutReach Alert:"
                                                           message:message
                                                          delegate:nil
