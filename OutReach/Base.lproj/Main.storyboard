@@ -234,7 +234,7 @@
                                             <constraint firstAttribute="width" constant="280" id="IYh-j3-Xmd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qfv-RR-8MV">
                                         <rect key="frame" x="20" y="172" width="280" height="40"/>
@@ -264,7 +264,7 @@
                                             <constraint firstAttribute="height" constant="40" id="PG2-Ul-kiO"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -330,6 +330,12 @@
                     <navigationItem key="navigationItem" id="mBE-Ju-cso"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="emailAddress" destination="xRZ-FB-RZ4" id="wex-f0-CfP"/>
+                        <outlet property="firstName" destination="SfP-5L-P7O" id="s5h-of-bPe"/>
+                        <outlet property="lastName" destination="Qfv-RR-8MV" id="dS0-lQ-vFm"/>
+                        <outlet property="password" destination="HuQ-m7-OA8" id="uaA-6s-49q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDC-Xl-hLP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
