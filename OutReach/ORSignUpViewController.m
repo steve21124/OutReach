@@ -35,7 +35,7 @@
 
    if (!firstName.length || !lastName.length || !password.length || !email.length)
    {
-      NSString *message = @"Make sure you enter a username, password, and email address.";
+      NSString *message = @"Make sure you enter your first name, last name, email address and password.";
       UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"OutReach Alert:"
                                                           message:message
                                                          delegate:nil
