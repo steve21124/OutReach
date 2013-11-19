@@ -46,7 +46,8 @@
                                    password:password
                                       block:
        ^(PFUser *user, NSError *error) {
-          if (error) {
+          if (error)
+          {
              UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Sorry!"
                                                                  message:[[error userInfo] objectForKey:@"error"]
                                                                 delegate:nil
@@ -54,7 +55,8 @@
                                                        otherButtonTitles:nil];
              [alertView show];
           }
-          else {
+          else
+          {
              [self.navigationController popToRootViewControllerAnimated:YES];
           }
        }];
