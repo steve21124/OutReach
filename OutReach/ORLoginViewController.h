@@ -8,11 +8,18 @@
 
 #import "ORBaseViewController.h"
 
+@class TPKeyboardAvoidingScrollView;
+
 @interface ORLoginViewController : ORBaseViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *actionButton;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UILabel *bottomLabel;
+@property (weak, nonatomic) IBOutlet UIButton *toggleCredentialsButton;
 
-- (IBAction)login:(id)sender;
+- (IBAction)loginOrSignUp:(id)sender;
+- (IBAction)toggleCredentials:(id)sender;
 
 @end

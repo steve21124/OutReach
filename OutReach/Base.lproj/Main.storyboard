@@ -106,31 +106,33 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WK8-fL-RAB">
-                                        <rect key="frame" x="120" y="268" width="80" height="30"/>
+                                        <rect key="frame" x="20" y="268" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="FDn-Fi-m8P"/>
-                                            <constraint firstAttribute="height" constant="30" id="Pcy-q3-Ct1"/>
+                                            <constraint firstAttribute="width" constant="280" id="06k-M8-93j"/>
+                                            <constraint firstAttribute="height" constant="30" id="JVG-s4-PIT"/>
                                         </constraints>
-                                        <state key="normal" title="Login">
+                                        <state key="normal" title="  Log In  ">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="login:" destination="DmP-f3-eYY" eventType="touchUpInside" id="sUy-sn-4Ma"/>
+                                            <action selector="loginOrSignUp:" destination="DmP-f3-eYY" eventType="touchUpInside" id="5dK-vb-PTz"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WK8-fL-RAB" secondAttribute="bottom" constant="4" id="9Hp-Xp-Ki0"/>
+                                    <constraint firstAttribute="trailing" secondItem="WK8-fL-RAB" secondAttribute="trailing" constant="20" id="Eqq-VM-tgO"/>
                                     <constraint firstAttribute="trailing" secondItem="x9C-IL-oXA" secondAttribute="trailing" constant="20" id="EyU-dr-0ig"/>
-                                    <constraint firstItem="WK8-fL-RAB" firstAttribute="leading" secondItem="SMx-qy-Znb" secondAttribute="leading" constant="120" id="Jf4-RX-ZUZ"/>
+                                    <constraint firstItem="WK8-fL-RAB" firstAttribute="leading" secondItem="SMx-qy-Znb" secondAttribute="leading" constant="20" id="Jf4-RX-ZUZ"/>
                                     <constraint firstItem="x9C-IL-oXA" firstAttribute="leading" secondItem="SMx-qy-Znb" secondAttribute="leading" constant="20" id="O9A-Da-24N"/>
+                                    <constraint firstAttribute="bottom" secondItem="WK8-fL-RAB" secondAttribute="bottom" priority="1" constant="182" id="OkR-Tv-t88"/>
                                     <constraint firstItem="6W0-TT-mBq" firstAttribute="leading" secondItem="SMx-qy-Znb" secondAttribute="leading" constant="20" id="UPg-Rc-szs"/>
+                                    <constraint firstItem="WK8-fL-RAB" firstAttribute="leading" secondItem="SMx-qy-Znb" secondAttribute="leading" constant="20" id="XpD-Q4-sxv"/>
                                     <constraint firstItem="WK8-fL-RAB" firstAttribute="top" secondItem="x9C-IL-oXA" secondAttribute="bottom" constant="8" id="ge8-Ip-OJi"/>
-                                    <constraint firstAttribute="trailing" secondItem="WK8-fL-RAB" secondAttribute="trailing" constant="120" id="hNP-sH-92S"/>
+                                    <constraint firstAttribute="trailing" secondItem="WK8-fL-RAB" secondAttribute="trailing" constant="20" id="hNP-sH-92S"/>
                                     <constraint firstAttribute="trailing" secondItem="6W0-TT-mBq" secondAttribute="trailing" constant="20" id="ndE-J0-ZrW"/>
                                     <constraint firstAttribute="centerY" secondItem="x9C-IL-oXA" secondAttribute="centerY" id="oSF-dS-hq9"/>
-                                    <constraint firstAttribute="bottom" secondItem="WK8-fL-RAB" secondAttribute="bottom" priority="1" constant="4" id="ssX-jx-6rM"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WK8-fL-RAB" secondAttribute="bottom" constant="4" id="rPJ-sf-rsK"/>
                                     <constraint firstItem="x9C-IL-oXA" firstAttribute="top" secondItem="6W0-TT-mBq" secondAttribute="bottom" constant="8" id="unW-vI-nbL"/>
                                 </constraints>
                             </scrollView>
@@ -141,11 +143,11 @@
                                     <constraint firstAttribute="width" constant="78" id="2a3-Wg-Wbj"/>
                                     <constraint firstAttribute="height" constant="40" id="swZ-Gg-hUO"/>
                                 </constraints>
-                                <state key="normal" title="Sign Up.">
+                                <state key="normal" title="Toggle">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BQX-mr-mpm" kind="push" identifier="showSignUp" id="0tb-tN-vcP"/>
+                                    <action selector="toggleCredentials:" destination="DmP-f3-eYY" eventType="touchUpInside" id="jlL-68-9zW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mk-1S-VU5">
@@ -178,8 +180,12 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="actionButton" destination="WK8-fL-RAB" id="b1t-mq-TWr"/>
+                        <outlet property="bottomLabel" destination="6mk-1S-VU5" id="z8v-dL-KCy"/>
                         <outlet property="emailTextField" destination="6W0-TT-mBq" id="gnN-nJ-O7S"/>
                         <outlet property="passwordTextField" destination="x9C-IL-oXA" id="nHU-Uo-dkn"/>
+                        <outlet property="scrollView" destination="SMx-qy-Znb" id="sK1-Mf-M14"/>
+                        <outlet property="toggleCredentialsButton" destination="ai9-bR-Mo7" id="FTw-3U-fuo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qB-LZ-f21" userLabel="First Responder" sceneMemberID="firstResponder"/>
