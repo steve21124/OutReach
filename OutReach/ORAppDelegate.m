@@ -17,8 +17,7 @@ static NSString *clientKey = @"DLOzlH2j16n7JKagmwGO8OlzKRXkCUOfXXunadeL";
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-   [Parse setApplicationId:appID
-                 clientKey:clientKey];
+   [Parse setApplicationId:appID clientKey:clientKey];
     return YES;
 }
 							
