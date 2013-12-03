@@ -36,6 +36,8 @@
 		8E99B35818305DC000C7AEDB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E99B34F18305DC000C7AEDB /* StoreKit.framework */; };
 		8E99B35918305DC000C7AEDB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E99B35018305DC000C7AEDB /* SystemConfiguration.framework */; };
 		8E99B35F183086C800C7AEDB /* ORHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E99B35E183086C800C7AEDB /* ORHomeViewController.m */; };
+		8EAA5A14184D8C22008E34D9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EAA5A13184D8C21008E34D9 /* Accelerate.framework */; };
+		8EAA5A1A184D8C6E008E34D9 /* RNFrostedSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA5A19184D8C6E008E34D9 /* RNFrostedSidebar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,9 @@
 		8E99B35018305DC000C7AEDB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8E99B35D183086C800C7AEDB /* ORHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORHomeViewController.h; sourceTree = "<group>"; };
 		8E99B35E183086C800C7AEDB /* ORHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORHomeViewController.m; sourceTree = "<group>"; };
+		8EAA5A13184D8C21008E34D9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		8EAA5A18184D8C6E008E34D9 /* RNFrostedSidebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNFrostedSidebar.h; path = 3rdParty/RNFrostedSidebar.h; sourceTree = "<group>"; };
+		8EAA5A19184D8C6E008E34D9 /* RNFrostedSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNFrostedSidebar.m; path = 3rdParty/RNFrostedSidebar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EAA5A14184D8C22008E34D9 /* Accelerate.framework in Frameworks */,
 				8E99B35118305DC000C7AEDB /* AudioToolbox.framework in Frameworks */,
 				8E99B35218305DC000C7AEDB /* CFNetwork.framework in Frameworks */,
 				8E99B35318305DC000C7AEDB /* CoreLocation.framework in Frameworks */,
@@ -127,6 +133,8 @@
 		8E75B021183AE331000AEEB8 /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
+				8EAA5A18184D8C6E008E34D9 /* RNFrostedSidebar.h */,
+				8EAA5A19184D8C6E008E34D9 /* RNFrostedSidebar.m */,
 				8E75B022183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.h */,
 				8E75B023183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.m */,
 				8E75B024183AE34B000AEEB8 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
@@ -159,6 +167,7 @@
 		8E99B31018305B9F00C7AEDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8EAA5A13184D8C21008E34D9 /* Accelerate.framework */,
 				8E99B34818305DC000C7AEDB /* AudioToolbox.framework */,
 				8E99B34918305DC000C7AEDB /* CFNetwork.framework */,
 				8E99B34A18305DC000C7AEDB /* CoreLocation.framework */,
@@ -332,6 +341,7 @@
 				8E75B027183AE34B000AEEB8 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				8E99B32218305B9F00C7AEDB /* ORAppDelegate.m in Sources */,
 				8E76CB6518308B3E001072A3 /* ORSignUpViewController.m in Sources */,
+				8EAA5A1A184D8C6E008E34D9 /* RNFrostedSidebar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
