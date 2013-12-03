@@ -130,6 +130,8 @@
 		8E75B021183AE331000AEEB8 /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
+				8E75B028183DC58E000AEEB8 /* UIColor+Crayola.h */,
+				8E75B029183DC58E000AEEB8 /* UIColor+Crayola.m */,
 				8E75B022183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.h */,
 				8E75B023183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.m */,
 				8E75B024183AE34B000AEEB8 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
@@ -183,8 +185,6 @@
 		8E99B31718305B9F00C7AEDB /* OutReach */ = {
 			isa = PBXGroup;
 			children = (
-				8E75B028183DC58E000AEEB8 /* UIColor+Crayola.h */,
-				8E75B029183DC58E000AEEB8 /* UIColor+Crayola.m */,
 				8E99B32918305B9F00C7AEDB /* Images.xcassets */,
 				8E99B32318305B9F00C7AEDB /* Main.storyboard */,
 				8E76CB6318308B3E001072A3 /* ORSignUpViewController.h */,
