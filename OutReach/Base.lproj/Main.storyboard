@@ -49,7 +49,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ww1-b6-kDx"/>
+                    <navigationItem key="navigationItem" id="Ww1-b6-kDx">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="IRD-zE-ylZ">
+                            <color key="tintColor" red="0.14926545520000001" green="0.14926545520000001" blue="0.14926545520000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="showMenu:" destination="vXZ-lx-hvc" id="iV6-Y4-pD0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="usernameLabel" destination="6FF-0o-d1Q" id="WAv-NI-Kay"/>
                         <segue destination="DmP-f3-eYY" kind="push" identifier="showLogin" id="qNS-tz-1cW"/>
@@ -360,6 +367,9 @@
             <point key="canvasLocation" x="-226" y="78"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="menu" width="16" height="16"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

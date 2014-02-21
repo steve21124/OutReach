@@ -639,7 +639,6 @@ static RNFrostedSidebar *rn_frostedMenu;
             *stop = YES;
         }
     }];
-    
     return index;
 }
 
