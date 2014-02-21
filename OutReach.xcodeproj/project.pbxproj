@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E2B5EF418B6E69400947CD2 /* ORNavigationMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B5EF318B6E69400947CD2 /* ORNavigationMenu.m */; };
 		8E75B026183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75B023183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.m */; };
 		8E75B027183AE34B000AEEB8 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75B025183AE34B000AEEB8 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		8E76CB5F1830873A001072A3 /* ORBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E76CB5E1830873A001072A3 /* ORBaseViewController.m */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E2B5EF218B6E69400947CD2 /* ORNavigationMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORNavigationMenu.h; sourceTree = "<group>"; };
+		8E2B5EF318B6E69400947CD2 /* ORNavigationMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORNavigationMenu.m; sourceTree = "<group>"; };
 		8E75B022183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = 3rdParty/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		8E75B023183AE34B000AEEB8 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = 3rdParty/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		8E75B024183AE34B000AEEB8 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "3rdParty/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
@@ -201,6 +204,8 @@
 				8E76CB5E1830873A001072A3 /* ORBaseViewController.m */,
 				8E99B35D183086C800C7AEDB /* ORHomeViewController.h */,
 				8E99B35E183086C800C7AEDB /* ORHomeViewController.m */,
+				8E2B5EF218B6E69400947CD2 /* ORNavigationMenu.h */,
+				8E2B5EF318B6E69400947CD2 /* ORNavigationMenu.m */,
 				8E99B31818305B9F00C7AEDB /* Supporting Files */,
 			);
 			path = OutReach;
@@ -342,6 +347,7 @@
 				8E99B32218305B9F00C7AEDB /* ORAppDelegate.m in Sources */,
 				8E76CB6518308B3E001072A3 /* ORSignUpViewController.m in Sources */,
 				8EAA5A1A184D8C6E008E34D9 /* RNFrostedSidebar.m in Sources */,
+				8E2B5EF418B6E69400947CD2 /* ORNavigationMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
